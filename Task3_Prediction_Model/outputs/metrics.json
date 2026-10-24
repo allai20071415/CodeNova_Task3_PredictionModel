@@ -1,0 +1,36 @@
+{
+  "dataset": "Wisconsin Diagnostic Breast Cancer (scikit-learn bundled public dataset)",
+  "rows": 569,
+  "features": 30,
+  "target_names": [
+    "malignant",
+    "benign"
+  ],
+  "split": {
+    "train_rows": 455,
+    "test_rows": 114,
+    "test_size": 0.2,
+    "random_state": 42
+  },
+  "baseline_majority_class": {
+    "accuracy": 0.631578947368421,
+    "precision_positive_class": 0.631578947368421,
+    "recall_positive_class": 1.0,
+    "f1_positive_class": 0.7741935483870968
+  },
+  "random_forest": {
+    "accuracy": 0.9473684210526315,
+    "precision_positive_class": 0.9583333333333334,
+    "recall_positive_class": 0.9583333333333334,
+    "f1_positive_class": 0.9583333333333334,
+    "roc_auc": 0.9927248677248677,
+    "cross_validation_f1_mean": 0.9663021136251626,
+    "cross_validation_f1_std": 0.014542465603193572
+  },
+  "positive_class": "benign",
+  "limitations": [
+    "This educational dataset is not a substitute for clinical assessment.",
+    "Metrics depend on the supplied dataset and random split and may not generalize to other populations.",
+    "The model predicts dataset labels and must not be used to make medical decisions."
+  ]
+}
